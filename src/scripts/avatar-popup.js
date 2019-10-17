@@ -53,7 +53,7 @@ class AvatarPopup extends Popup {
     getHtml() {
         return `  
             <div class="popup__content">
-                <img class="popup__close" src="../images/close.svg">
+                <span class="popup__close"></span>
                 <h3 class="popup__title">Обновить аватар</h3>
                 <form class="popup__form" name="editAvatar">
                     <div class="popup__input-group">

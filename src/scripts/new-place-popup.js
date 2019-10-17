@@ -58,7 +58,7 @@ class NewPlacePopup extends Popup {
     getHtml() {
         return `  
             <div class="popup__content">
-                <img class="popup__close" src="../images/close.svg">
+                <span class="popup__close"></span>
                 <h3 class="popup__title">Новое место</h3>
                 <form class="popup__form" name="newPlace">
                     <div class="popup__input-group">
