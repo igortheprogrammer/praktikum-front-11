@@ -3,13 +3,16 @@
 import '../pages/index.css';
 
 import { apiOptions } from './config';
+import Api from './api';
+import CardList from './card-list';
+import ImagePopup from './image-popup';
 
 const popUpContainer = document.querySelector('.root');
 const placesList = document.querySelector('.places-list');
 
-// const api = new Api(apiOptions);
-// const cardList = new CardList(api, placesList);
-// const imagePopUpWindow = new ImagePopup(api, popUpContainer);
+const api = new Api(apiOptions);
+const imagePopUpWindow = new ImagePopup(api, popUpContainer);
+const cardList = new CardList(api, placesList, imagePopUpWindow.open);
 // const editProfileWindow = new ProfilePopup(api, popUpContainer);
 // const editAvatarWindow = new AvatarPopup(api, popUpContainer);
 // const newPlaceWindow = new NewPlacePopup(api, popUpContainer, cardList);

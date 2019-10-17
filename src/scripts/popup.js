@@ -1,9 +1,10 @@
 'use strict';
 
-class Popup {
+export default class Popup {
     constructor(api, container) {
         this.api = api;
         this.popUpWindow = this.renderPopupWindow();
+        this.open = this.open.bind(this);
         this.close = this.close.bind(this);
         this.popUpWindow.querySelector('.popup__close').addEventListener('click', this.close);
         container.appendChild(this.popUpWindow);

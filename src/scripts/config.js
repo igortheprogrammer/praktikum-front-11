@@ -10,6 +10,9 @@ const apiOptions = {
     }
 };
 
+const userId = 'b4cfeda71ad0ddb3e434b0e2';
+
 export {
-    apiOptions
+    apiOptions,
+    userId
 }

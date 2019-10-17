@@ -1,7 +1,9 @@
 'use strict';
 
-class Card {
-    constructor(api, card) {
+import { userId } from './config';
+
+export default class Card {
+    constructor(api, card, showImage) {
         const {
             name,
             link,
@@ -12,7 +14,8 @@ class Card {
             likes
         } = card;
 
-        this.userId = 'b4cfeda71ad0ddb3e434b0e2';
+        this.showImage = showImage;
+        this.userId = userId;
         this.api = api;
         this.link = link;
         this.cardId = cardId;
@@ -108,6 +111,6 @@ class Card {
     }
 
     openImage() {
-        imagePopUpWindow.open(this.link);
+        this.showImage(this.link);
     }
 }

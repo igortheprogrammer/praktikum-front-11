@@ -1,16 +1,19 @@
 'use strict';
 
-class CardList {
-    constructor(api, container) {
+import Card from './card';
+
+export default class CardList {
+    constructor(api, container, showImage) {
         this.container = container;
         this.api = api;
+        this.showImage = showImage;
         this.render();
     }
 
     addCard(card) {
         const {
             cardElement
-        } = new Card(this.api, card);
+        } = new Card(this.api, card, this.showImage);
         this.container.appendChild(cardElement);
     }
 

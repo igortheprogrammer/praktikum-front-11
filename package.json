@@ -1,6 +1,6 @@
 {
   "name": "praktikum-front-11",
-  "version": "0.0.1",
+  "version": "0.4.0",
   "description": "Проектная работа 11 в рамках курса 'Вер-разработчик'. Яндекс.Практикум",
   "main": "index.js",
   "dependencies": {

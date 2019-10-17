@@ -1,6 +1,6 @@
 'use strict';
 
-class Api {
+export default class Api {
     constructor(options) {
         this.options = options;
         this.getInitialCards = this.getInitialCards.bind(this);
