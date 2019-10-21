@@ -1,9 +1,0 @@
-.popup__close {
-  background: url(../../../images/close.svg) center no-repeat transparent;
-  width: 26px;
-  height: 26px;
-  position: absolute;
-  top: -26px;
-  right: -26px;
-  cursor: pointer;
-}
