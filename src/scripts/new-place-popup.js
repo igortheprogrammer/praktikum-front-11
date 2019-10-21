@@ -1,6 +1,8 @@
 'use strict';
 
-class NewPlacePopup extends Popup {
+import Popup from './popup';
+
+export default class NewPlacePopup extends Popup {
     constructor(api, container, cardList) {
         super(api, container);
         this.cardList = cardList;
@@ -36,7 +38,7 @@ class NewPlacePopup extends Popup {
             const placeLink = this.popUpWindow.querySelector('.popup__input_type_link-url').value;
             this.api.addNewPlace(placeName, placeLink)
                 .then((place) => {
-                    cardList.addCard(
+                    this.cardList.addCard(
                         place
                     );
                 })
