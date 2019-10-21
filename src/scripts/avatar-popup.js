@@ -1,6 +1,8 @@
 'use strict';
 
-class AvatarPopup extends Popup {
+import Popup from './popup';
+
+export default class AvatarPopup extends Popup {
     renderPopupWindow() {
         const popupElement = document.createElement('div');
         popupElement.classList.add('popup', 'popup_edit-avatar')
