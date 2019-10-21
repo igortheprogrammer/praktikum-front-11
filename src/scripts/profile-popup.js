@@ -50,7 +50,7 @@ export default class ProfilePopup extends Popup {
 
     getHtml() {
         return `  
-            <div class="popup__content"><img class="popup__close" src="../images/close.svg">
+            <div class="popup__content"><span class="popup__close"></span>
                 <h3 class="popup__title">Редактировать профиль</h3>
                 <form class="popup__form" name="editProfile">
                 <div class="popup__input-group"><input class="popup__input popup__input_type_name" 
