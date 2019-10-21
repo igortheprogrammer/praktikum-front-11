@@ -1,9 +1,11 @@
 'use strict';
 
-class ProfilePopup extends Popup {
+import Popup from './popup';
+
+export default class ProfilePopup extends Popup {
     renderPopupWindow() {
         const popupElement = document.createElement('div');
-        popupElement.classList.add('popup', 'popup_edit-profile')
+        popupElement.classList.add('popup', 'popup_edit-profile');
 
         popupElement.innerHTML = this.getHtml();
 
