@@ -1,0 +1,47 @@
+{
+  "name": "praktikum-front-11",
+  "version": "1.0.0",
+  "description": "Проектная работа 11 в рамках курса 'Вер-разработчик'. Яндекс.Практикум",
+  "main": "index.js",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.1.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "autoprefixer": "^9.6.5",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^4.2.0",
+    "gh-pages": "~2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igortheprogrammer/praktikum-front-11.git"
+  },
+  "author": "Igor Inozemtsev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igortheprogrammer/praktikum-front-11/issues"
+  },
+  "homepage": "https://igortheprogrammer.github.io/praktikum-front-11/"
+}
